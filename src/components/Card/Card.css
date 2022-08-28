@@ -9,18 +9,27 @@
     margin-bottom: 50px;
     display: flex;
     flex-direction:column ;
-    backdrop-filter: blur(10px);
-    box-shadow: 5px 5px 5px -6px;
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(80px);
+    box-shadow: 1px 15px 30px -3px;
+    -webkit-backdrop-filter: blur(80px);
     align-items: center;
 }
 #publish{
     position: relative;
     bottom: 0px;
+    font-weight: 700;
     left:0px;
     color:white;
     border-radius: 30px;
 
+}
+h5{
+    border-radius: 15px;
+    padding: 5px;
+    background-color: rgba(255,255,255,0.7);
+    width: 98%;
+    box-shadow:0 5px 15px -2px black;
+    font-weight: 800;
 }
 .Line{
     width: 120px;

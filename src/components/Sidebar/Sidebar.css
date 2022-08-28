@@ -1,6 +1,6 @@
 .sidebar-container{
     width:15vw;
-    height:85vh;
+    height:75vh;
     position: relative;
     left:20px;
     text-align: center;
@@ -8,14 +8,15 @@
     box-shadow: 0px 10px 15px -2px black;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter:blur(15px);
-    transition: ease-out;
+    transition: all;
     transition-duration: 100ms;
 }
 
 @media all and (max-width:800px){
     .sidebar-container{
         width: 45vw;
+        margin-top:6.5%;
         z-index: 2;
-        height:85vh;
+        height:80vh;
     } 
 }

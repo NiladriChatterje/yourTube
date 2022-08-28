@@ -3,13 +3,20 @@
     height:95vh;
     display: flex;
     flex-direction: column;
+
    
     
+}
+.sidebar-body{
+    position: relative;
+    bottom: -80px;
+    display: flex;
+    justify-content: space-between;
 }
 .App > div:nth-child(2){
     display: flex;
     justify-content: space-between;
 }
 @media all and (max-width:800px){
-
+    .sidebar-body{bottom: 8px;}
 }
