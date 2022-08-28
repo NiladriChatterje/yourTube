@@ -4,6 +4,7 @@ import  Search from '../../search_icon.svg.png';
 import axios from 'axios';
 
 
+
 const options = {
     method: 'GET',
     url: 'https://youtube-v31.p.rapidapi.com/search',
@@ -18,16 +19,18 @@ const options = {
   };
 
 
-const Header = ({setVideoList}) => {
+const Header = ({setVideoList,setIsLoading}) => {
 const [isDark,setDark] = React.useState(() => true);
 const [isSidebar,setIsSidebar] = React.useState(()=>true);
 const [isSearchActive,setIsSearchActive] = React.useState(()=>false);
 
 
 const getSearchData = React.useCallback(async (text="coding")=>{
+    setIsLoading(true);
     let {data:{items}} = await axios.get(`https://youtube-v31.p.rapidapi.com/search?q=${text}`,options)
     .then(Response => Response).then(data => data)
     .catch(err => console.log(err));
+    setIsLoading(false);
     setVideoList(items);
     console.log(items);
     return items;

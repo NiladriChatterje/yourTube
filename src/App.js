@@ -7,18 +7,15 @@ import MiniCircles from './components/MiniCircles/MiniCircles';
 
 function App() {
   const [videoList,setVideoList] = React.useState(() => []);
+  const [isLoading,setIsLoading] = React.useState(() => true);
   
   return (
     <div className="App">
-      <Header setVideoList={setVideoList} videoList={videoList} />
+      <Header setVideoList={setVideoList} videoList={videoList} setIsLoading={setIsLoading} />
       <div>
         <Sidebar setVideoList={setVideoList}/>
-        <Body videoList={videoList} />
+        <Body videoList={videoList} isLoading={isLoading} />
       </div>
-      <div className='bottom-circle'></div>
-      <div className='top-circle1'></div>
-      <div className='top-circle2'></div>
-      <div className='top-circle3'></div>
       <MiniCircles />
     </div>
   );

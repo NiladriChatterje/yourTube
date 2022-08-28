@@ -8,8 +8,8 @@ nav{
     margin-top:1.5%;
     border-radius: 20px;
     box-shadow: 0px 10px 15px -2px black;
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter:blur(15px);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter:blur(25px);
     margin-bottom: 50px;
 }
 
