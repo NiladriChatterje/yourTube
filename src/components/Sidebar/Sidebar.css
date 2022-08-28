@@ -1,0 +1,21 @@
+.sidebar-container{
+    width:15vw;
+    height:85vh;
+    position: relative;
+    left:20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px -2px black;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+    transition: ease-out;
+    transition-duration: 100ms;
+}
+
+@media all and (max-width:800px){
+    .sidebar-container{
+        width: 45vw;
+        z-index: 2;
+        height:85vh;
+    } 
+}

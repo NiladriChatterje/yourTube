@@ -1,0 +1,15 @@
+.App{
+    width: 100vw;
+    height:95vh;
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+.App > div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+}
+@media all and (max-width:800px){
+
+}

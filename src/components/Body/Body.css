@@ -1,0 +1,37 @@
+.Body{
+    position: relative;
+    width:78vw;
+    height:85vh;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px -2px;
+    margin-right: 35px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    justify-content: center;
+}
+.Body::-webkit-scrollbar{
+    width:10px;
+}
+.Body::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+.Body::-webkit-scrollbar-thumb{
+    border-radius: 15px;
+    background-color: rgb(5, 5, 108);
+}
+
+@media all and (max-width:800px){
+    .Body{
+        margin-top: 6.0%;
+        width:95vw;
+        height: 88vh;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+}

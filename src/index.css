@@ -1,0 +1,97 @@
+@import url('https://db.onlinewebfonts.com/c/5d9e72f413a0c6c2cadf93edccf32db2?family=Halogen');
+@import url('https://fonts.cdnfonts.com/css/blanka');
+@import url('https://fonts.cdnfonts.com/css/elianto');
+body {
+  margin: 0;
+  font-family: "Elianto","Halogen",-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    transition: ease-in;
+    height: 100vh;
+    transition-duration: 100ms;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to bottom right,rgb(229, 223, 255),rgb(85, 90, 175));
+  overflow: hidden;
+}
+
+*{
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+.bottom-circle{
+  position: fixed;
+  bottom: 0;
+  right:0;
+  width:600px;
+  box-shadow: -10px 25px 18px -2px rgb(35, 29, 70);
+  height:600px;
+  background-color: rgb(83, 45, 255);
+  border-top-left-radius: 50%;
+  border-bottom-left-radius:50%;
+  border-top-right-radius:50%;
+  z-index:-1;
+}
+.top-circle1{
+  position: fixed;
+  top: 0;
+  left:0;
+  width:600px;
+  box-shadow: -10px 25px 18px -2px rgb(35, 29, 70);
+  height:600px;
+  background-color: rgb(83, 45, 255);
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius:50%;
+  border-top-right-radius:50%;
+  z-index:-1;
+}
+.top-circle2{
+  position: fixed;
+  top: 0;
+  left:0;
+  width:700px;
+  box-shadow: -10px 25px 18px -2px rgb(35, 29, 70);
+  height:700px;
+  background-color: rgb(87, 57, 222);
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius:50%;
+  border-top-right-radius:50%;
+  z-index:-3;
+}
+.top-circle3{
+  position: fixed;
+  top: 0;
+  left:0;
+  width:800px;
+  box-shadow: -10px 25px 18px -2px rgb(35, 29, 70);
+  height:800px;
+  background-color: rgb(229, 223, 255);
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius:50%;
+  border-top-right-radius:50%;
+  z-index:-4;
+}
+@media all and (max-width:800px){
+ .top-circle1{
+  width:20vw;
+  height:20vw;
+ }
+ .top-circle2{
+  width:30vw;
+  height:30vw;
+ }
+ .top-circle3{
+  width:50vw;
+  height:50vw;
+ }
+ .bottom-circle{
+  width:40vw;
+  height:40vw;
+ }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

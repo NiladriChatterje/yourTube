@@ -1,0 +1,40 @@
+.video-cards{
+    transition: all;
+    transition-duration: 100ms;
+    width:320px;
+    height:550px;
+    margin:25px;
+    border-radius: 20px;
+    margin-top:30px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction:column ;
+    backdrop-filter: blur(10px);
+    box-shadow: 5px 5px 5px -6px;
+    -webkit-backdrop-filter: blur(10px);
+    align-items: center;
+}
+#publish{
+    position: relative;
+    bottom: 0px;
+    left:0px;
+    color:white;
+    border-radius: 30px;
+
+}
+.Line{
+    width: 120px;
+    height:2px;
+    margin-top:5px;
+    margin-bottom:5px;
+    background-color: rgb(60, 60, 60);
+    border-radius: 50px;
+}
+.video-cards:hover{
+    cursor:pointer;
+    transform:scale(1.10,1.10);
+}
+.video-cards > img{
+    border-radius: 10px;
+    margin-top:0;
+}
