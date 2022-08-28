@@ -2,27 +2,10 @@
     position: fixed;
     width:70px;
     height:70px;
-    background-color: rgb(66, 37, 198);
+    background-color: rgb(255, 236, 207);
     border-radius: 50%;
     box-shadow: -1px 10px 15px -5px rgb(12, 12, 45);
     z-index:-1;
-    animation: mini;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-  }
-
- 
-  @keyframes mini{
-    0%{
-        transform: scale(0,0);
-        
-    }
-    50%{
-        transform: scale(1,1);
-    }
-    100%{
-        transform: scale(0,0);
-    }
   }
 
 

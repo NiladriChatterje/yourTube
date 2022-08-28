@@ -68,7 +68,7 @@ React.useEffect(()=>{
                    Array.from(document.getElementsByClassName('top-circle2'))[0].style.backgroundColor =  'rgb(255,255,255)';
                    Array.from(document.getElementsByClassName('top-circle3'))[0].style.backgroundColor =  'rgb(229, 221, 255)'; 
                    Array.from(document.getElementsByClassName('sub-bottom-circle1')).map((item)=>{
-                    item.style.backgroundColor ='rgb(3,12,46)';
+                    item.style.backgroundColor ='rgb(3,12,86)';
                     item.style.boxShadow ='rgb(100,125,255)';
                 return undefined;});
                    setDark(false);
@@ -80,7 +80,7 @@ React.useEffect(()=>{
                     Array.from(document.getElementsByClassName('top-circle1'))[0].style.backgroundColor =  'rgb(83,45,255)';
                     Array.from(document.getElementsByClassName('top-circle3'))[0].style.backgroundColor =  'rgb(80, 65, 144)';
                     Array.from(document.getElementsByClassName('sub-bottom-circle1')).map((item)=>{
-                        item.style.backgroundColor ='rgb(83,45,255)';
+                        item.style.backgroundColor ='rgb(255, 236, 207)';
                         item.style.boxShadow ='rgb(35,25,70)';
                     return undefined;
                 });
