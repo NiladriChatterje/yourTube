@@ -14,7 +14,7 @@ const options = {
       maxResults: '25'
     },
     headers: {
-      'X-RapidAPI-Key': '3224681278mshdf603cd43fde3cbp13a2f6jsnf3ec618192c1',
+      'X-RapidAPI-Key': '23512ed8dcmsh480a23b5a80fb35p1219bajsnebe530750740',
       'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
     }
   };
@@ -22,7 +22,7 @@ const options = {
 
 const Header = ({setVideoList,setIsLoading}) => {
 const [isDark,setDark] = React.useState(() => true);
-const [isSidebar,setIsSidebar] = React.useState(()=>true);
+const [isSidebar,setIsSidebar] = React.useState(()=>false);
 const [isSearchActive,setIsSearchActive] = React.useState(()=>false);
 const navigate = useNavigate();
 

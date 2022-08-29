@@ -1,6 +1,6 @@
 import React from 'react'
 import './SuggestedVideos.css';
-import Loader from '../Loader';
+import {Link} from 'react-router-dom';
 
 const SuggestedVideos = ({suggestions}) => {
   
@@ -16,7 +16,7 @@ const SuggestedVideos = ({suggestions}) => {
     onWheel={e => wheelEvent(e)}
     >
         {suggestions?.map((item) =>
-         <span>{item}</span>
+         <Link>{item}</Link>
         )};
     </div>
   )

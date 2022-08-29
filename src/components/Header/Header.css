@@ -68,7 +68,20 @@ nav > div:nth-child(3){
 nav > div:nth-child(3):hover{
     margin-top: -10px;
 }
-
+nav > div:nth-child(4){
+    position: fixed;
+    right:90vw;
+    width:25px;
+    height: 25px;
+    box-shadow: 0 5px 10px -3px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+nav > div:nth-child(4):hover{
+    margin-top: -10px;
+}
 @media all and (max-width:800px){
     nav > img:nth-child(1){
         right:15px;
@@ -87,19 +100,6 @@ nav > div:nth-child(3):hover{
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
     }
-    nav > div:nth-child(4){
-        position: fixed;
-        right:90vw;
-        width:25px;
-        height: 25px;
-        box-shadow: 0 5px 10px -3px;
-        background-color: rgb(255, 255, 255);
-        border-radius: 50%;
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
-    }
-    nav > div:nth-child(4):hover{
-        margin-top: -10px;
-    }
+    
    
 }

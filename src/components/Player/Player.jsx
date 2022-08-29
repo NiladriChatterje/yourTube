@@ -23,7 +23,7 @@ const Player = ({isToggle,setCommentState}) => {
           params: {part: 'contentDetails,snippet,statistics',
            id: `${id}`},
           headers: {
-            'X-RapidAPI-Key': '3224681278mshdf603cd43fde3cbp13a2f6jsnf3ec618192c1',
+            'X-RapidAPI-Key': '23512ed8dcmsh480a23b5a80fb35p1219bajsnebe530750740',
             'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
           }
       }).then(res => res)
@@ -38,7 +38,7 @@ const Player = ({isToggle,setCommentState}) => {
          
           params: {part: 'snippet', videoId: '7ghhRHRP6t4', maxResults: '100'},
           headers: {
-            'X-RapidAPI-Key': '3224681278mshdf603cd43fde3cbp13a2f6jsnf3ec618192c1',
+            'X-RapidAPI-Key': '23512ed8dcmsh480a23b5a80fb35p1219bajsnebe530750740',
             'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
           }
         }
