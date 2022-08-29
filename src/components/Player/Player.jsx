@@ -8,7 +8,7 @@ import Comments from '../Comments/Comments';
 
 
 
-const Player = ({isToggle,setCommentState}) => {
+const Player = ({isToggle,setCommentState,setSuggestions}) => {
   const [videodetails,setVideodetails] = React.useState(() => []);
   const [comments,setComments] = React.useState(()=>[]);
     const {id} = useParams();
@@ -36,7 +36,7 @@ const Player = ({isToggle,setCommentState}) => {
         const {data} = await axios.get('https://youtube-v31.p.rapidapi.com/commentThreads',
         {
          
-          params: {part: 'snippet', videoId: '7ghhRHRP6t4', maxResults: '100'},
+          params: {part: 'snippet', videoId: `${id}`, maxResults: '100'},
           headers: {
             'X-RapidAPI-Key': '23512ed8dcmsh480a23b5a80fb35p1219bajsnebe530750740',
             'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
@@ -46,7 +46,7 @@ const Player = ({isToggle,setCommentState}) => {
 
         setComments(data.items);
         console.log(data.items);
-
+        
 
         
     

@@ -10,13 +10,14 @@
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
 }
-.suggest-container > span:hover{
+
+.suggest-container  span:hover{
     cursor:pointer;
     background-color: white;
     color:rgb(13, 55, 91);
     border: 1px solid rgb(34, 27, 59);
 }
-.suggest-container > span {
+.suggest-container  span {
     color:white;
     min-width: 160px;
     font-weight: 900;
@@ -46,6 +47,7 @@
 
 @media all and (max-width:800px){
     .suggest-container{
+        min-width: 90vw;
         position: absolute;
         top:8.4%;
     }

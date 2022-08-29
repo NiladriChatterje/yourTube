@@ -8,7 +8,6 @@
     align-items: flex-start;
     justify-content: flex-start;
     padding:15px;
-
 }
 .author-details{
     
@@ -33,5 +32,11 @@
     margin-top:10px;
     height: 60px;
     border-radius: 50%;
+}
 
+@media all and (max-width:800px){
+    .comment-container{
+        bottom: 10px;
+        position: relative;
+    }
 }

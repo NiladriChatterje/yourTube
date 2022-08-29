@@ -4,7 +4,7 @@ import axios from 'axios';
 import './ChannelDetails.css';
 import Card from '../Card/Card';
 
-const ChannelDetails = ({commentState,setIsToggle}) => {
+const ChannelDetails = ({commentState,setIsToggle,}) => {
     const [channelDetails,setChannelDetails] = React.useState(()=>{});
     const [videoList,setVideoList] =React.useState(()=>[]);
 

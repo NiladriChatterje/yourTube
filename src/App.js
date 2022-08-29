@@ -15,21 +15,29 @@ function App() {
   const [isToggle,setIsToggle] = React.useState(()=> false);
   const [suggestions,setSuggestions] =React.useState(() => []);
   const [commentState,setCommentState] =React.useState(() => true);
-  
+  const [textstate,setText] = React.useState(() => 'coding');
+
+
   return (
     <>
     <div className="App">
-      <Header setVideoList={setVideoList} videoList={videoList} setIsLoading={setIsLoading} />
-      <SuggestedVideos suggestions={suggestions} setVideoList={setVideoList} />
+      <Header 
+          textstate={textstate}
+          setVideoList={setVideoList}
+           setIsLoading={setIsLoading}
+           setSuggestions={setSuggestions} />
+
+      <SuggestedVideos suggestions={suggestions} 
+        setCommentState={setCommentState} />
       
       <div className='sidebar-body'>
-        <Sidebar setVideoList={setVideoList}/>
+        <Sidebar setText={setText} />
         <Routes>
         <Route path="/" element={<Body 
                     videoList={videoList} 
                     isLoading={isLoading} 
                     setIsToggle={setIsToggle}/>} />
-        <Route path="/player/:id" element={<Player isToggle={isToggle} setCommentState={setCommentState} />} />
+        <Route path="/player/:id" element={<Player isToggle={isToggle} setSuggestions={setSuggestions} setCommentState={setCommentState} />} />
         <Route path="/channel/:id" element={<ChannelDetails setIsToggle={setIsToggle} commentState={commentState} />} />
         </Routes>
       </div>
