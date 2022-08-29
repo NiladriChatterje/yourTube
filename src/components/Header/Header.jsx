@@ -7,8 +7,6 @@ import { useNavigate } from 'react-router-dom';
 
 
 const options = {
-    method: 'GET',
-    url: 'https://youtube-v31.p.rapidapi.com/search',
     params: {
       part: 'id,snippet',
       maxResults: '25'
@@ -38,21 +36,10 @@ const getSearchData = React.useCallback(async (text=textstate)=>{
     return items;
 },[isSearchActive]);
 
-React.useCallback(async (text=textstate)=>{
-    setIsLoading(true);
-    let {data:{items}} = await axios.get(`https://youtube-v31.p.rapidapi.com/search?q=${text}`,options)
-    .then(Response => Response).then(data => data)
-    .catch(err => console.log(err));
-    setIsLoading(false);
-    setVideoList(items);
-    setSuggestions(items);
-    console.log(items);
-    
-},[textstate]);
 
 React.useEffect(()=>{
-    getSearchData();
-},[])
+    getSearchData(textstate);
+},[textstate]);
 
   return (
     <div >

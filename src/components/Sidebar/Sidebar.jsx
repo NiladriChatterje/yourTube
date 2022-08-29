@@ -9,18 +9,21 @@ const Sidebar = ({setText}) => {
   return (<>
     <div className='sidebar-container'>
       {categories?.map((item) =>{
-        return  <Link to={`/`} 
+        return  <div 
+        className='sidebar-list'
         onClick={() =>{
+          console.log(item)
           setText(item);
         }}
-        style={{textDecoration:'none'}}> 
-        <div 
-        className='sidebar-list'
         >
-
+          <Link         
+        to={`/`} 
+        
+        style={{textDecoration:'none',color:'black'}}> 
           {item}
+          </Link>
         </div>
-        </Link>
+        
       })}
     </div>
     </>

@@ -31,7 +31,7 @@ function App() {
         setCommentState={setCommentState} />
       
       <div className='sidebar-body'>
-        <Sidebar setText={setText} />
+        <Sidebar setText={setText} setIsToggle={setIsToggle} />
         <Routes>
         <Route path="/" element={<Body 
                     videoList={videoList} 

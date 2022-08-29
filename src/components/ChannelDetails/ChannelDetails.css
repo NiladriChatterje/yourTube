@@ -1,7 +1,6 @@
 .channel-container{
     position: relative;
     width:78vw;
-    max-width: fit-content;
     height:75vh;
     border-radius: 25px;
     box-shadow: 0 10px 10px -2px;
@@ -12,6 +11,7 @@
     word-wrap: break-word;
     overflow-y: auto;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
 }
 .only-for-cards{
@@ -71,6 +71,7 @@
     .channel-container{
         margin-top: 10.0%;
         width:95vw;
+        min-width:95vw;
         height: 80vh;
         position: absolute;
         top:50%;
