@@ -1,0 +1,37 @@
+.comment-container{
+    display: flex;
+    flex-direction: column;
+    margin-top:20px;
+    font-size: 2em;
+    font-weight: 900;
+    color:white;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding:15px;
+
+}
+.author-details{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.comment-box > span{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    font-size: 0.43em;
+    color:rgb(71, 71, 100)
+}
+.author-details >span{
+    font-size: 0.52em;
+    margin-left:5vw;
+    color:rgb(18, 18, 75);
+}
+.author-details img{
+    width: 60px;
+    margin-top:10px;
+    height: 60px;
+    border-radius: 50%;
+
+}

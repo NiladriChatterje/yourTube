@@ -9,7 +9,6 @@
 }
 .sidebar-body{
     position: relative;
-    bottom: -80px;
     display: flex;
     justify-content: space-between;
 }
@@ -18,5 +17,7 @@
     justify-content: space-between;
 }
 @media all and (max-width:800px){
-    .sidebar-body{bottom: 8px;}
+    .sidebar-body{
+        bottom: 5px;
+    }
 }

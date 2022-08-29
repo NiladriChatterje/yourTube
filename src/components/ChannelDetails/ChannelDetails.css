@@ -1,0 +1,88 @@
+.channel-container{
+    position: relative;
+    width:78vw;
+    max-width: fit-content;
+    height:75vh;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px -2px;
+    margin-right: 35px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    word-wrap: break-word;
+    overflow-y: auto;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.only-for-cards{
+    display: flex;
+    flex-direction: column;
+}
+.img-profile{
+    border-radius: 50%;
+    position:relative;
+    z-index: 3;}
+
+.text-style{
+    font-size: 1.2em;
+    font-weight: 900;
+    margin-bottom: 80px;
+    color: rgb(37, 36, 49);
+}
+.playLists{
+    font-weight: 900;
+    font-size: 2em;
+    color:rgb(17, 11, 56);
+}
+.channel-container::-webkit-scrollbar{
+    width:10px;
+}
+.channel-container::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+.channel-container::-webkit-scrollbar-thumb{
+    border-radius: 15px;
+    background-color: rgb(5, 5, 108);
+}
+
+.channel-container > span:nth-child(1){
+    font-size: 2.2em;
+    color:rgb(25, 19, 48);
+}
+.channel-container > span:nth-child(4){
+    font-size: larger;
+}
+.channel-container > span:nth-child(5){
+    font-size: 1.5em;
+}
+.subscriber{
+    font-weight: 600;
+    width:150px;
+    height:80px;
+    color: white;
+    border-radius: 50px;
+    border:2px solid white;
+    background-color: rgb(55, 53, 65);
+}
+
+
+@media all and (max-width:800px){
+    .channel-container{
+        margin-top: 10.0%;
+        width:95vw;
+        height: 80vh;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .img-profile{
+        border-radius: 50%;
+        position:relative;
+        z-index: 3;
+        margin-top:10px;
+    
+    }
+}

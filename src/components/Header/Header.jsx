@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.css';
 import  Search from '../../search_icon.svg.png';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -23,7 +24,7 @@ const Header = ({setVideoList,setIsLoading}) => {
 const [isDark,setDark] = React.useState(() => true);
 const [isSidebar,setIsSidebar] = React.useState(()=>true);
 const [isSearchActive,setIsSearchActive] = React.useState(()=>false);
-
+const navigate = useNavigate();
 
 const getSearchData = React.useCallback(async (text="coding")=>{
     setIsLoading(true);
@@ -49,16 +50,22 @@ React.useEffect(()=>{
                 document.getElementById('input').focus();
                 if(!document.getElementById('input').value)
                    alert('Empty Search is Not possible');
-
-                // setIsSearchActive(prev =>!prev);
+                else {setIsSearchActive(prev =>!prev);
+                    getSearchData(document.getElementById('input').value);
+                    }
             }}  />
             <input type={'text'}  id='input' 
             onKeyDownCapture={e => {
                             if(e.key === "Enter")
                                {
                                 setIsSearchActive(prev => !prev);
-                                getSearchData(document.getElementById('input').value);
-                                
+                                if(document.getElementById('input').value !== "" || document.getElementById('input').value !== " ")
+                                    {getSearchData(document.getElementById('input').value);
+                                    
+                                    navigate('/');
+                                    }
+                                else
+                                    alert('Empty Search is not possible');
                                } }}/>
             <div onClick={()=>{
                 if(isDark)

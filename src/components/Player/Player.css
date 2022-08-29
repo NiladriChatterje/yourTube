@@ -1,0 +1,41 @@
+.react-player-container{
+    position: relative;
+    width:78vw;
+    height:75vh;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px -2px;
+    margin-right: 35px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+   
+}
+.react-player-container::-webkit-scrollbar{
+    width:10px;
+}
+.react-player-container::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+.react-player-container::-webkit-scrollbar-thumb{
+    border-radius: 15px;
+    background-color: rgb(5, 5, 108);
+}
+.react-player{
+    position: sticky;
+    border-radius: 30px;
+}
+
+@media all and (max-width:800px){
+    .react-player-container{
+        margin-top: 6.0%;
+        width:95vw;
+        height: 80vh;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+}

@@ -1,8 +1,7 @@
 .suggest-container{
     width:90vw;
     height:100px;
-    position: absolute;
-    top: 8%;
+    position: relative;
     left: 50%;
     transform: translate(-50%,0);
     display: flex;
@@ -19,12 +18,14 @@
 }
 .suggest-container > span {
     color:white;
-    text-align: center;
     min-width: 160px;
     font-weight: 900;
     margin-right: 60px;
     font-size: medium;
     height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 20px;
     box-shadow: 0 5px 10px -3px black;
     backdrop-filter: blur(15px);
@@ -41,4 +42,11 @@
     background-color: rgb(21, 21, 65);
     border-radius: 20px;
     width: 5px;
+}
+
+@media all and (max-width:800px){
+    .suggest-container{
+        position: absolute;
+        top:8.4%;
+    }
 }

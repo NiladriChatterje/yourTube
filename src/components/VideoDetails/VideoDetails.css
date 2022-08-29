@@ -1,0 +1,44 @@
+.video-details{
+    margin-top:30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.channel-title
+{
+    cursor: pointer;
+    font-size: 2em;
+    padding-left: 15px;
+    font-weight: 900;
+    color: white;
+
+}
+.channel-title:hover{
+    transform: scale(1.08,1);
+}
+.title{
+    font-weight: 900;
+    padding-left: 15px;
+}
+.description{
+    margin-top: 20px;
+    font-weight: 900;
+    padding: 15px;
+    color: rgb(25, 25, 55);
+}
+.description >span{
+    font-weight: 900;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    filter:drop-shadow(0 5px 5px -1px black)
+}
+.videolikes{
+    padding:5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.videolikes >span{
+    font-size: medium;
+    font-weight: 700;
+}
