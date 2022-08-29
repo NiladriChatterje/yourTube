@@ -36,7 +36,7 @@ const getSearchData = React.useCallback(async (text=textstate)=>{
     setSuggestions(items);
     console.log(items);
     return items;
-},[isSearchActive]);
+},[isSearchActive,textstate]);
 
 
 
