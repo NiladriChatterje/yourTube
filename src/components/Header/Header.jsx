@@ -36,9 +36,19 @@ const getSearchData = React.useCallback(async (text=textstate)=>{
     setSuggestions(items);
     console.log(items);
     return items;
-},[isSearchActive,textstate]);
+},[isSearchActive]);
 
-
+React.useCallback(async (text=textstate)=>{
+    setIsLoading(true);
+    let {data:{items}} = await axios.get(`https://youtube-v31.p.rapidapi.com/search?q=${text}`,options)
+    .then(Response => Response).then(data => data)
+    .catch(err => console.log(err));
+    setIsLoading(false);
+    setVideoList(items);
+    setSuggestions(items);
+    console.log(items);
+    
+},[textstate]);
 
 React.useEffect(()=>{
     getSearchData();
